@@ -16,6 +16,7 @@
     <link rel="icon" href="/favicon.ico">
 
     <title>Портфолио</title>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -26,13 +27,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
-                    <img class="header-img" src="img/main-img.png" alt="Monitor">
+                    <img class="header-img animated fadeInLeftBig" src="img/main-img.png" alt="Monitor">
                 </div>
                 <div class="col-lg-5">
-                    <p class="header_pre">Веб-разработчик</p>
-                    <h1 class="header_tittle">Денис Березнев</h1>
-                    <p class="header_sub">Верстка на HTML/CSS<br> Разработка сайтов под ключ</p>
-                    <div class="header_button_block">
+                    <p class="header_pre wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+                    <h1 class="header_tittle wow fadeInRightBig" data-wow-delay="0.2s">Денис Березнев</h1>
+                    <p class="header_sub wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS<br> Разработка сайтов под ключ</p>
+                    <div class="header_button_block wow fadeInRightBig" data-wow-delay="0.4wows">
                         <a href="https://vk.com/nazzzgul" class="header_button">Связаться</a>
                         <small>*Это бесплатно</small>
                     </div>
@@ -45,7 +46,7 @@
 
     <section class="portfolio">
         <div class="container">
-            <div class="portfolio_block">
+            <div class="portfolio_block wow fadeIn">
                 <h2 class="portfolio_title">Портфолио</h2>
                 <p class="portfolio_sub">Мои работы</p>
 
@@ -72,32 +73,36 @@
     </section>
 
     <footer>
-         <div class="container">
-             <div class="row">
-                 <div class="col-md-4">
-                     <h4 class="footer_author">Денис Березнев</h4>
-                     <p class="footer-text">Разработка сайтов под ключ</p>
-                 </div>
-                 <div class="col-md-4">
-                     <div class="social-block">
-                         <p>Подпишитесь:</p>
-                       <a href="https://www.facebook.com/denisberez"><img src="img/social/facebook-logo-button.png" alt="Facebook"></a>
-                       <a href="https://vk.com/nazzzgul"><img src="img/social/vk-social-logotype.png" alt="VK"></a>
-                       <a href="http://t.me/Ev1lSuN"><img src="img/social/telegram-symbol.png" alt="Telegram"></a>
-                       <a href="#"><img src="img/social/youtube-symbol.png" alt="YouTube"></a>
-                     </div>
-                 </div>
-                 <div class="col-md-4">
-                     <div class="footer_cta-block">
-                         <p class="footer-cta">Напишите мне:</p>
-                     <a href="https://vk.com/nazzzgul" class="footer-button">Написать</a>
-                     </div>
-                 </div>
-             </div>
-         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4 class="footer_author">Денис Березнев</h4>
+                    <p class="footer-text">Разработка сайтов под ключ</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-block">
+                        <p>Подпишитесь:</p>
+                        <a class="wow bounceInDown" data-wow-delay="0.1s" href="https://www.facebook.com/denisberez"><img  src="img/social/facebook-logo-button.png" alt="Facebook"></a>
+                        <a class="wow bounceInDown" data-wow-delay="0.2s" href="https://vk.com/nazzzgul"><img  src="img/social/vk-social-logotype.png" alt="VK"></a>
+                        <a class="wow bounceInDown" data-wow-delay="0.3s" href="http://t.me/Ev1lSuN"><img  src="img/social/telegram-symbol.png" alt="Telegram"></a>
+                        <a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img  src="img/social/youtube-symbol.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer_cta-block">
+                        <p class="footer-cta">Напишите мне:</p>
+                        <a href="https://vk.com/nazzzgul" class="footer-button">Написать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
-
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        wow
+    </script>
 </body>
 
 </html>

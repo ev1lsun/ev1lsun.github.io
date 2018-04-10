@@ -46,6 +46,11 @@ header {
     font-size: 18px;
     padding: 17px 55px;
     margin-top: 33px;
+    transition: 0.8s; 
+}
+
+.header_button:hover  {
+    box-shadow: none; 
 }
 
 header small {
@@ -164,6 +169,12 @@ footer {
     border-radius: 50px;
     padding: 12px 40px;
     text-decoration: none;
+    transition: 0.8s;
+}
+
+.footer-button:hover {
+     background-color: #fff;
+     color: #3a7dfd;
 }
 
 @media (max-width: 1200px) {
